@@ -14,7 +14,9 @@ fn main() {
         String::from("Hackpad is a blot in the horizon"),
         String::from("The wee woo team always puts out the fires in Slack"),
         String::from("After an apocalypse comes a revoolution"),
-        String::from("The Boreal Express went chuga chuga in Vancouver")
+        String::from("The Boreal Express went chuga chuga in Vancouver"),
+        String::from("HCB is a fiscal sponsorship program for Hack Clubbers"),
+        String::from("Anxiety Wolf has some interesting thoughts on the world"),
     ];
     let mut emojis: Vec<char> = vec![
         '🤯', '😭', '😏', '😋', '🙀', '🍪', '👿', '😢', '😇', '🥳', '🥺', '🥶', '🤮', '🤧', '🤑',
