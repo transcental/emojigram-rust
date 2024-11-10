@@ -47,14 +47,6 @@ fn main() {
         return;
     }
 
-    let emojified_sentence: String = sentence.chars().map(|c| {
-        if c.is_alphabetic() {
-            charmap.get(&c.to_string()).unwrap().to_string()
-        } else {
-            c.to_string()
-        }
-    }).collect();
-
     let mut rng = rand::thread_rng();
     let parsable_sentence = sentence.chars().enumerate().map(|(_, c)| {
         if c.is_alphabetic() {
@@ -71,7 +63,7 @@ fn main() {
     
     let guesses: usize = 3;
     for guess in 0..guesses {
-        println!("{}\n{}", emojified_sentence, parsable_sentence);
+        println!("{}", parsable_sentence);
         println!("\n");
         println!("What do you think the sentence is? ({}/{} attempts reamaining):", guesses - guess, guesses);
         let mut sentence_guess = String::new();
