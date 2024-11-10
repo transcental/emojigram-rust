@@ -1,0 +1,14 @@
+[package]
+name = "emojigram"
+description="Cryptograms are boring. Everyone likes emojis now, let's get emojigrams in style!"
+version = "0.1.0"
+authors = ["Amber <amber@transcental.dev>"]
+edition = "2021"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/transcental/emojigram-rust"
+keywords = ["emojigram", "hack club", "puzzle", "cryptogram", "games"]
+categories = ["command-line-utilities", "games"]
+
+[dependencies]
+rand = "0.8.5"
